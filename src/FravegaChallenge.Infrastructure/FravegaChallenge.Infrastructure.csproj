@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Ardalis.Result" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+		<PackageReference Include="MongoDB.Driver" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\FravegaChallenge.Domain\FravegaChallenge.Domain.csproj" />
+	  <InternalsVisibleTo Include="DynamicProxyGenAssembly2"/>
+	  <InternalsVisibleTo Include="FravegaChallenge.Infrastructure.UnitTests"/>
+	</ItemGroup>
+</Project>

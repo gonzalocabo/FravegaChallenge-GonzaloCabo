@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="Code Coverage">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Exclude>
+                <!-- Excluir ensamblados específicos si es necesario -->
+                <ModulePath>.*Tests.dll$</ModulePath>
+                <ModulePath>.*fluentvalidation.dll$</ModulePath>
+              </Exclude>
+            </ModulePaths>
+            <Functions>
+              <Exclude>
+                <!-- Excluir funciones dentro del espacio de nombres especificado -->
+                <Function>^Microsoft.Extensions.DependencyInjection</Function>
+              </Exclude>
+            </Functions>
+            <Sources>
+              <Exclude>
+                .*Program\.cs$
+              </Exclude>
+            </Sources>
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

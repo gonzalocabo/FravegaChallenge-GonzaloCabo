@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>FravegaChallenge.Application</RootNamespace>
+		<AssemblyName>FravegaChallenge.Application</AssemblyName>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="Mapster" />
+    <PackageReference Include="Mapster.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FravegaChallenge.Domain\FravegaChallenge.Domain.csproj" />
+    <ProjectReference Include="..\FravegaChallenge.Infrastructure\FravegaChallenge.Infrastructure.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="FravegaChallenge.Application.UnitTests"/>
+	</ItemGroup>
+
+</Project>

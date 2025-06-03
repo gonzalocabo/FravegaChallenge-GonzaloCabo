@@ -1,0 +1,20 @@
+services:
+  fravegachallenge.api:
+    image: ${DOCKER_REGISTRY-}fravegachallengeapi
+    build:
+      context: ..
+      dockerfile: src/FravegaChallenge.API/Dockerfile
+
+  fravegachallenge.mongodb:
+    image: mongodb/mongodb-community-server:8.0.8-ubi9
+    ports:
+      - 27017:27017
+    volumes:
+        - mongoDb:/data/db
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: FravegaChallenge
+      MONGODB_INITDB_ROOT_PASSWORD: FravegaChallenge
+    restart: unless-stopped
+
+volumes:
+  mongoDb:    

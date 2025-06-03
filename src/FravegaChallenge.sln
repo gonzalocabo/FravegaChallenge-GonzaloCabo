@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.API", "FravegaChallenge.API\FravegaChallenge.API.csproj", "{16627337-B756-4EE7-943E-445181D94FC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		..\CodeCoverage.runsettings = ..\CodeCoverage.runsettings
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\Directory.Packages.props = ..\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Application", "FravegaChallenge.Application\FravegaChallenge.Application.csproj", "{20CA4F36-CE9B-4A4E-9800-216575B07FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Domain", "FravegaChallenge.Domain\FravegaChallenge.Domain.csproj", "{76E070B7-36E5-429E-80DC-70FFE54DC613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Infrastructure", "FravegaChallenge.Infrastructure\FravegaChallenge.Infrastructure.csproj", "{7ED1DBEA-193A-4AB7-8485-F33942E1F667}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C7F16790-2B9C-4435-8850-6806FE7F9D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Domain.UnitTests", "..\tests\FravegaChallenge.Domain.UnitTests\FravegaChallenge.Domain.UnitTests.csproj", "{2EFC460C-6145-496F-806E-FD0A6CD80229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Infrastructure.UnitTests", "..\tests\FravegaChallenge.Infrastructure.UnitTests\FravegaChallenge.Infrastructure.UnitTests.csproj", "{F5AAE043-B600-4DC9-8E77-CC36604FDB0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.Application.UnitTests", "..\tests\FravegaChallenge.Application.UnitTests\FravegaChallenge.Application.UnitTests.csproj", "{FD746851-EF56-4754-BACC-F6F655018DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FravegaChallenge.API.FunctionalTests", "..\tests\FravegaChallenge.API.FunctionalTests\FravegaChallenge.API.FunctionalTests.csproj", "{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16627337-B756-4EE7-943E-445181D94FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16627337-B756-4EE7-943E-445181D94FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16627337-B756-4EE7-943E-445181D94FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16627337-B756-4EE7-943E-445181D94FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CA4F36-CE9B-4A4E-9800-216575B07FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CA4F36-CE9B-4A4E-9800-216575B07FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CA4F36-CE9B-4A4E-9800-216575B07FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CA4F36-CE9B-4A4E-9800-216575B07FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E070B7-36E5-429E-80DC-70FFE54DC613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E070B7-36E5-429E-80DC-70FFE54DC613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E070B7-36E5-429E-80DC-70FFE54DC613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E070B7-36E5-429E-80DC-70FFE54DC613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED1DBEA-193A-4AB7-8485-F33942E1F667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED1DBEA-193A-4AB7-8485-F33942E1F667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED1DBEA-193A-4AB7-8485-F33942E1F667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED1DBEA-193A-4AB7-8485-F33942E1F667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EFC460C-6145-496F-806E-FD0A6CD80229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFC460C-6145-496F-806E-FD0A6CD80229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFC460C-6145-496F-806E-FD0A6CD80229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFC460C-6145-496F-806E-FD0A6CD80229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AAE043-B600-4DC9-8E77-CC36604FDB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AAE043-B600-4DC9-8E77-CC36604FDB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AAE043-B600-4DC9-8E77-CC36604FDB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AAE043-B600-4DC9-8E77-CC36604FDB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD746851-EF56-4754-BACC-F6F655018DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD746851-EF56-4754-BACC-F6F655018DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD746851-EF56-4754-BACC-F6F655018DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD746851-EF56-4754-BACC-F6F655018DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16627337-B756-4EE7-943E-445181D94FC9} = {C7F16790-2B9C-4435-8850-6806FE7F9D66}
+		{20CA4F36-CE9B-4A4E-9800-216575B07FC7} = {C7F16790-2B9C-4435-8850-6806FE7F9D66}
+		{76E070B7-36E5-429E-80DC-70FFE54DC613} = {C7F16790-2B9C-4435-8850-6806FE7F9D66}
+		{7ED1DBEA-193A-4AB7-8485-F33942E1F667} = {C7F16790-2B9C-4435-8850-6806FE7F9D66}
+		{2EFC460C-6145-496F-806E-FD0A6CD80229} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F5AAE043-B600-4DC9-8E77-CC36604FDB0D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FD746851-EF56-4754-BACC-F6F655018DFD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1AE5A51E-7BC3-47ED-89A0-1429FC57E39C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D95EBBC-8642-4045-B139-7B651CF044FE}
+	EndGlobalSection
+EndGlobal

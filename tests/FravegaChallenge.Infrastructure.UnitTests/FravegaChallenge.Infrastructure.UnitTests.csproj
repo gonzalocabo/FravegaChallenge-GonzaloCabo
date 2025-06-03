@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+	  <RootNamespace>FravegaChallenge.Infrastructure.UnitTests</RootNamespace>
+	  <AssemblyName>FravegaChallenge.Infrastructure.UnitTests</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="coverlet.collector">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="FluentAssertions" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" />
+	  <PackageReference Include="MongoDB.Driver" />
+	  <PackageReference Include="Moq" />
+	  <PackageReference Include="NUnit" />
+	  <PackageReference Include="NUnit.Analyzers">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="NUnit3TestAdapter" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\FravegaChallenge.Infrastructure\FravegaChallenge.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>

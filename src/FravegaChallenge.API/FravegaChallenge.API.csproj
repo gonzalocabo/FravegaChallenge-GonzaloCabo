@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<RootNamespace>FravegaChallenge.API</RootNamespace>
+	<AssemblyName>FravegaChallenge.API</AssemblyName>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+	<DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Carter" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FravegaChallenge.Application\FravegaChallenge.Application.csproj" />
+    <ProjectReference Include="..\FravegaChallenge.Infrastructure\FravegaChallenge.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
